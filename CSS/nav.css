@@ -1,0 +1,123 @@
+:root {
+    --navbar-height: 48px;
+}
+.background {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    opacity: 1;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.menu__wrapper {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    z-index: 2;
+}
+
+.menu__bar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 3rem 0 0;
+    gap: 2rem;
+    height: 4rem;
+    opacity: 0.9;
+}
+.menu__bar img{
+    margin-right: 2%;
+}
+.menu-icon {
+    cursor: pointer;
+    display: flex;
+    height: 2rem;
+    width: 2rem;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0;
+}
+@media (min-width: 960px) {
+    div.background{
+        display: none;
+    }
+}
+@media (max-width: 960px) {
+    header#header nav#navbar ul{
+        display: none;
+    }
+    .navigation {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        z-index: 1000;
+        position: relative;
+    }
+    .navigation--mobile a{
+        color: white;
+        text-decoration: none;
+        font-size: 200%;
+        font-family: Verdana, Geneva, sans-serif;
+    }
+    .navigation--mobile {
+        top: var(--navbar-height);
+        position: absolute;
+        top: 10;
+        right: 0;
+        display: flex;
+        padding: 5rem 3.5rem;
+        min-height: 100vh;
+        gap: 0.5rem;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0.95;
+        background-color: rgba(40, 40, 40, 0.938);
+        animation: fadein 0.3s forwards;
+    }
+
+    @keyframes fadein {
+        0% {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        100% {
+            opacity: 1;
+            width: 100%;
+            height: calc(100vh);
+        }
+    }
+
+    .navigation--mobile--fadeout {
+        animation: fadeout 300ms forwards;
+    }
+
+    @keyframes fadeout {
+        0% {
+            opacity: 1;
+            width: 100%;
+            height: calc(100vh);
+        }
+
+        100% {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+    }
+
+}

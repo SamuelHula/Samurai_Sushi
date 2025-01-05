@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ročníkový Projekt WEB</title>
+    <link rel="stylesheet" href="./CSS/kontakt.css">
+    <link rel="stylesheet" href="./CSS/nav.css">
+</head>
+<body>
+    <header id="header">
+        <nav id="navbar">
+            <div>
+                <img src="images/logo.png" alt="logo">
+                <a href="index.html">www.restusamuraja.sk</a>
+            </div>
+            <ul>
+                <li><a href="index.html">Hlavná stránka</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="galeria.html">Galéria</a></li>
+                <li><a href="kontakt.html">Kontakt a objednávky</a></li>
+            </ul>
+        </nav>
+        <div class="background">
+            <div class="menu__wrapper">
+                <div class="menu__bar">
+                    <img class="menu-icon" src="images/burger-menu.svg" title='Burger Menu' alt='Burger Menu'
+                        onclick="toggleMenu(this)">
+                    <ul class="navigation">
+                        <li>
+                            <a href="index.html">Hlavná stránka</a>
+                        </li>
+                        <li>
+                            <a href="menu.html">Menu</a>
+                        </li>
+                        <li>
+                            <a href="galeria.html">Galéria</a>
+                        </li>
+                        <li>
+                            <a href="kontakt.html">Kontakt a objednávky</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="main">
+            <section id="kontakt">
+                <article class="kontakt">
+                    <h2>Napíšte Nám</h2>
+                    <div class="row">
+                        <div>
+                            <label for="meno">Meno</label><br>
+                            <input type="name" id="meno" placeholder="Meno">
+                        </div>
+                        <div>
+                            <label for="predmet">Predmet</label><br>
+                            <input type="text" id="predmet" placeholder="Predmet">
+                        </div>
+                    </div>    
+                    <div class="srow">
+                        <div>
+                            <label for="email">E-mail</label><br>
+                            <input type="email" id="email" placeholder="E-mail">                    
+                        </div>
+                        <div>
+                            <label for="text">Poznámka</label><br>
+                            <textarea placeholder="Napíšte Nám" id="text"></textarea>
+                        </div>
+                        <button onclick="alert('Your Message has been sent')">Poslať</button>
+                    </div>
+                </article>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <section id="kontakt">
+            <div class="tel">
+                <h3>Tel. Číslo</h3>
+                <p>tel: +41 41 516 67 11 </p>
+                <p>mobil: +421 904 574 631</p>
+            </div>
+            <div class="mail">
+                <h3>Mail:</h3>
+                <p>rezervacie@sushihanil.sk</p>
+                <p>
+                    mahdonova@sushihanil.sk
+                </p>
+            </div>
+        </section>
+        <section id="copyright">
+            <p>Created by &nbsp;<a style="color: white;" href="https://github.com/SamuelHula">Samuel Hula</a></p>
+        </section>
+        <script src="index.js"></script>
+    </footer>
+</body>
+</html>

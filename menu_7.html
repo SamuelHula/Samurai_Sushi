@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ročníkový Projekt WEB</title>
+    <link rel="stylesheet" href="./CSS/menu_1.css">
+    <link rel="stylesheet" href="./CSS/nav.css">
+</head>
+<body>
+    <header id="header">
+        <nav id="navbar">
+            <div>
+                <img src="images/logo.png" alt="logo">
+                <a href="index.html">www.restusamuraja.sk</a>
+            </div>
+            <ul>
+                <li><a href="index.html">Hlavná stránka</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="galeria.html">Galéria</a></li>
+                <li><a href="kontakt.html">Kontakt a objednávky</a></li>
+            </ul>
+        </nav>
+        <div class="background">
+            <div class="menu__wrapper">
+                <div class="menu__bar">
+                    <img class="menu-icon" src="images/burger-menu.svg" title='Burger Menu' alt='Burger Menu'
+                        onclick="toggleMenu(this)">
+                    <ul class="navigation">
+                        <li>
+                            <a href="index.html">Hlavná stránka</a>
+                        </li>
+                        <li>
+                            <a href="menu.html">Menu</a>
+                        </li>
+                        <li>
+                            <a href="galeria.html">Galéria</a>
+                        </li>
+                        <li>
+                            <a href="kontakt.html">Kontakt a objednávky</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="main">
+           <section id="sidenav">
+                <a href="menu_1.html">Sushi</a>
+                <a href="menu_2.html">Predjedlá a Šaláty</a>
+                <a href="menu_3.html">Poke bowl</a>
+                <a href="menu_4.html">Polievky</a>
+                <a href="menu_5.html">Rezance</a>
+                <a href="menu_6.html">Prílohy</a>
+                <a href="menu_7.html">Dezerty</a>
+                <a href="menu_8.html">Nápojový Lístok</a>
+            </section>
+            <section id="offer">
+                <h2>Dezerty</h2>
+                <article class="offer">
+                    <aside>
+                        <img src="images/media.png" alt="kokosove gulicky">
+                        <p>Krémové kokosové guličky - 6,00 €</p>              
+                    </aside>
+                </article>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <section id="kontakt">
+            <div class="tel">
+                <h3>Tel. Číslo</h3>
+                <p>tel: +41 41 516 67 11 </p>
+                <p>mobil: +421 904 574 631</p>
+            </div>
+            <div class="mail">
+                <h3>Mail:</h3>
+                <p>rezervacie@sushihanil.sk</p>
+                <p>
+                    mahdonova@sushihanil.sk
+                </p>
+            </div>
+        </section>
+        <section id="copyright">
+            <p>Created by &nbsp;<a style="color: white;" href="https://github.com/SamuelHula">Samuel Hula</a></p>
+        </section>
+        <script src="index.js"></script>
+    </footer>
+</body>
+</html>
