@@ -143,3 +143,16 @@ footer section#copyright{
     text-align: center;
     font-family: "Caveat";
 }
+@media screen and (max-width:897px){
+    footer section#kontakt{
+        flex-direction: column;
+    }
+    footer section#kontakt div h3{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    footer section#kontakt div p{
+        font-size: 1rem;
+        text-align: center;
+    }
+}
