@@ -11,7 +11,8 @@
     top: 0;
     left: 0;
 }
-.menu__wrapper {
+.menu__wrapper{
+    height: 100%;
     display: flex;
     position: relative;
     flex-direction: row;
@@ -21,6 +22,7 @@
 .menu__bar {
     position: fixed;
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -32,10 +34,13 @@
 }
 .menu__bar img{
     margin-right: 2%;
+    width: 100%;
 }
 .menu-icon {
     cursor: pointer;
     display: flex;
+    align-items: center;
+    justify-content: center;
     height: 2rem;
     width: 2rem;
 }
