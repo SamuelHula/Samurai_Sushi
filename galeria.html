@@ -8,41 +8,34 @@
     <link rel="stylesheet" href="./CSS/nav.css">
 </head>
 <body>
-    <header id="header">
-        <nav id="navbar">
-            <div>
-                <img src="images/logo.png" alt="logo">
-                <a href="index.html">www.restusamuraja.sk</a>
+    <header class="header" id="header">
+        <nav class="nav_bar">
+            <div class="logo">
+                <figure>
+                    <img src="images/logo.png" alt="logo">
+                </figure>
             </div>
-            <ul>
+            <ul class="nav_list">
                 <li><a href="index.html">Hlavná stránka</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="galeria.html">Galéria</a></li>
-                <li><a href="kontakt.html">Kontakt a objednávky</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="galeria.html">Galéria</a></li>
+                    <li><a href="kontakt.html">Kontakt a objednávky</a></li>
             </ul>
-        </nav>
-        <div class="background">
-            <div class="menu__wrapper">
-                <div class="menu__bar">
-                    <img class="menu-icon" src="images/burger-menu.svg" title='Burger Menu' alt='Burger Menu'
-                        onclick="toggleMenu(this)">
-                    <ul class="navigation">
-                        <li>
-                            <a href="index.html">Hlavná stránka</a>
-                        </li>
-                        <li>
-                            <a href="menu.html">Menu</a>
-                        </li>
-                        <li>
-                            <a href="galeria.html">Galéria</a>
-                        </li>
-                        <li>
-                            <a href="kontakt.html">Kontakt a objednávky</a>
-                        </li>
+            <div class="burger">
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox">
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+                    <ul class="menu__box">
+                        <li><a href="index.html">Hlavná stránka</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="galeria.html">Galéria</a></li>
+                        <li><a href="kontakt.html">Kontakt a objednávky</a></li>
                     </ul>
-                </div>
+                </input>
             </div>
-        </div>
+        </nav>
     </header>
     <main>
         <section id="main">
