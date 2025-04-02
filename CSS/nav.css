@@ -112,7 +112,7 @@ position: absolute;
 width: 100%;
 height: 5px;
 
-background-color: var(--secondary);
+background-color: white;
 
 transition-duration: .25s;
 }
@@ -143,7 +143,7 @@ margin: 0;
             
 list-style: none;
 
-background-color: var(--primary);
+background-color: rgb(255, 93, 93);
 
 transition-duration: .25s;
 }
@@ -166,9 +166,9 @@ width: 100%;
 
 padding: 20px;
 
-color: white;
+color: black;
 
-font-family: 'Roboto', sans-serif;
+font-family: "Lobster", sans-serif;
 font-size: 200%;
 
 text-decoration: none;
@@ -177,23 +177,7 @@ transition-duration: .25s;
 
 text-align: center;
 }
-.nav_listitem a::after{    
-background: none repeat scroll 0 0 transparent;
-bottom: 0;
-content: "";
-display: block;
-height: 7px;
-right: 0;
-bottom: 0;
-position: absolute;
-background: var(--primary);
-transition: 0.3s ease 0s, right 0.3s ease 0s;
-width: 0;
-}
-.nav_listitem a:hover:after { 
-width: 100%; 
-}
-li.contact_btn a::after{
-height: 0;
+div.hamburger-menu ul.menu__box li a:hover{ 
+color: white;
 }
 }
